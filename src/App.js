@@ -10,13 +10,9 @@ function App() {
         const event = new Date(selectedDate);
         let date = JSON.stringify(event);
         date = date.slice(1, 11);
-        console.log(date);
         let url = new URL('https://twi-node-deploy.herokuapp.com/api/getWebsites/')
-
         var params = { sDate: date }
-
         url.search = new URLSearchParams(params).toString();
-
         fetch(url).then(response => response.json()).then(data => setData(data.res));
     }
 

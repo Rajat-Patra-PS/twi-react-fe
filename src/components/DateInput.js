@@ -15,7 +15,7 @@ export default function DateInput(props) {
                 format="MM/dd/yyyy"
                 margin="normal"
                 id="date-picker-dialog"
-                label="Select a date to get top 5 mostvisited sites"
+                label="Select a date to get top 5 mostvisited websites"
                 value={selectedDate}
                 onChange={handleDateChange}
                 KeyboardButtonProps={{
